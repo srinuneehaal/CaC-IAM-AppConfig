@@ -1,4 +1,4 @@
-package com.sample.azureappconfig.config;
+package com.sample.azureappconfig.config.az;
 
 import com.azure.core.credential.TokenCredential;
 import com.azure.data.appconfiguration.ConfigurationClientBuilder;

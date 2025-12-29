@@ -1,4 +1,4 @@
-package com.sample.azureappconfig.config;
+package com.sample.azureappconfig.config.az;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -3,6 +3,8 @@ package com.sample.azureappconfig.controller;
 
 import com.sample.azureappconfig.config.IamAdaptorProperties;
 import com.sample.azureappconfig.config.PlanOrderingProperties;
+import com.sample.azureappconfig.config.props.CosmosStateProperties;
+import com.sample.azureappconfig.config.props.FileLocationProperties;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.ConfigurableApplicationContext;
@@ -16,11 +18,15 @@ public class AppRunner implements ApplicationRunner {
     private final IamAdaptorProperties iamAdaptorProperties;
     private final PlanOrderingProperties planOrderingProperties;
 
+    private final FileLocationProperties fileLocationProperties;
+    private final CosmosStateProperties cosmosStateProperties;
 
-    public AppRunner(ConfigurableApplicationContext context, IamAdaptorProperties iamAdaptorProperties, PlanOrderingProperties planOrderingProperties) {
+    public AppRunner(ConfigurableApplicationContext context, IamAdaptorProperties iamAdaptorProperties, PlanOrderingProperties planOrderingProperties, FileLocationProperties fileLocationProperties, CosmosStateProperties cosmosStateProperties) {
         this.context = context;
         this.iamAdaptorProperties = iamAdaptorProperties;
         this.planOrderingProperties = planOrderingProperties;
+        this.fileLocationProperties = fileLocationProperties;
+        this.cosmosStateProperties = cosmosStateProperties;
     }
 
 
@@ -33,6 +39,10 @@ public class AppRunner implements ApplicationRunner {
 
 
         );
+
+        System.out.println("fileLocationProperties==>" + fileLocationProperties.toString());
+        System.out.println("cosmosStateProperties==>" + cosmosStateProperties.toString());
+
 
     }
 

@@ -1,38 +1,32 @@
 package com.sample.azureappconfig.config;
 
-import lombok.Getter;
-import lombok.Setter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.context.annotation.Configuration;
 
-@Getter
-@Setter
+
 //@ConfigurationProperties(prefix = "iamadaptor")
 @RefreshScope
 @ConfigurationProperties
 public class IamAdaptorProperties {
 
-
-    @Value( "${azure.cosmos.container}")
+    @Value("${azure.cosmos.container}")
     private String azureCosmosContainer;
-    @Value( "${azure.cosmos.database}")
+    @Value("${azure.cosmos.database}")
     private String azureCosmosDatabase;
-    @Value( "${azure.cosmos.key}")
+    @Value("${azure.cosmos.key}")
     private String azureCosmosKey;
-    @Value( "${azure.cosmos.partitionkey}")
+    @Value("${azure.cosmos.partitionkey}")
     private String azureCosmosPartitionKey;
-    @Value( "${azure.cosmos.uri}")
+    @Value("${azure.cosmos.uri}")
     private String azureCosmosUri;
-@Value( "${cacex.paths.changed-files-dir}")
+    @Value("${cacex.paths.changed-files-dir}")
     private String changedFilesDir;
-    @Value( "${cacex.paths.master-plan-file}")
+    @Value("${cacex.paths.master-plan-file}")
     private String masterPlanFile;
-    @Value( "${cacex.report.master-plan-report-enabled}")
+    @Value("${cacex.report.master-plan-report-enabled}")
     private boolean masterPlanReportEnabled;
-    private String message;
-    @Value( "${cacex.paths.plan-dir}")
+    @Value("${cacex.paths.plan-dir}")
     private String planDir;
 
     @Override
@@ -47,9 +41,7 @@ public class IamAdaptorProperties {
                 ", changedFilesDir='" + changedFilesDir + '\'' +
                 ", masterPlanFile='" + masterPlanFile + '\'' +
                 ", masterPlanReportEnabled=" + masterPlanReportEnabled +
-                ", message='" + message + '\'' +
                 ", planDir='" + planDir + '\'' +
                 '}';
-
-     }
+    }
 }

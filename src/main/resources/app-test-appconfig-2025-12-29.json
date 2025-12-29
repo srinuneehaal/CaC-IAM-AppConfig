@@ -1,0 +1,79 @@
+[
+  {
+    "key": "/application/iamadaptor.AZURE_COSMOS_CONTAINER",
+    "label": "iamadaptor",
+    "value": "policies_roles",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.AZURE_COSMOS_DATABASE",
+    "label": "iamadaptor",
+    "value": "iam_adaptor_config",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.AZURE_COSMOS_KEY",
+    "label": "iamadaptor",
+    "value": "4VHBlw70FVITLV8YFJzuEZAQCn2BCJTdS7zU0UwPj8jvmh4WDBaLTbaDLppL8urUSfqLabOdyVvQACDbGINU0Q",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.AZURE_COSMOS_PARTITION_KEY",
+    "label": "iamadaptor",
+    "value": "/typeOfItem",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.AZURE_COSMOS_URI",
+    "label": "iamadaptor",
+    "value": "https://app-test-dev.documents.azure.com:443/",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.CHANGED_FILES_DIR",
+    "label": "iamadaptor",
+    "value": "configs",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.MASTER_PLAN_FILE",
+    "label": "iamadaptor",
+    "value": "masterplan.json",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.MASTER_PLAN_REPORT_ENABLED",
+    "label": "iamadaptor",
+    "value": "true",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.message",
+    "label": "iamadaptor",
+    "value": "this is message with iamadaptor label and prefix new",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "/application/iamadaptor.PLAN_DIR",
+    "label": "iamadaptor",
+    "value": "plan",
+    "content_type": "",
+    "tags": {}
+  },
+  {
+    "key": "RefreshCount",
+    "label": "iamadaptor",
+    "value": "2",
+    "content_type": "",
+    "tags": {}
+  }
+]
