@@ -45,6 +45,7 @@ jobs:
           SPRING_CLOUD_AZURE_APPCONFIGURATION_STORES_0_LABEL: ${{ env.APP_CONFIG_LABEL }}
           AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
           AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
         run: |
           ls -l target
           timeout 90s java -jar "target/${{ env.JAR_NAME }}"
