@@ -2,11 +2,9 @@ package com.sample.azureappconfig.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import com.sample.azureappconfig.config.az.RefreshScopeAlias;
-
 
 //@ConfigurationProperties(prefix = "iamadaptor")
-@RefreshScopeAlias
+
 @ConfigurationProperties
 public class IamAdaptorProperties {
 

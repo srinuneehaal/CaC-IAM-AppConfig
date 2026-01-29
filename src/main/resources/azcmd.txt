@@ -2,3 +2,4 @@
 to import properties
 az appconfig kv import --name app-test-appconfig --source file --path src/main/resources/plan-ordering.properties --format properties --label iamadaptor --yes
 
+AZURE_APP_CONFIG_ENDPOINT=;AZURE_CLIENT_ID=;AZURE_CLIENT_SECRET=;AZURE_TENANT_ID=
